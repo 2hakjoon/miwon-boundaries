@@ -2,8 +2,9 @@
   "name": "miwon-boundaries",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -13,7 +14,8 @@
     "prettier": "^2.8.1",
     "react": "^18.2.0",
     "rollup": "^3.7.5",
-    "rollup-plugin-typescript2": "^0.34.1"
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.9.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.26"
