@@ -5,12 +5,16 @@ import {
   MiwonSuspense,
   MiwonLazyLender
 } from 'miwon-boundaries'
+import { ErrorComponent } from './components/ErrorComponent'
+
 function App() {
   return (
     <>
       MY APP
       <MiwonAsyncBoundary />
-      <MiwonErrorBoundary />
+      <MiwonErrorBoundary>
+        <ErrorComponent></ErrorComponent>
+      </MiwonErrorBoundary>
       <MiwonSuspense />
       <MiwonLazyLender />
     </>
