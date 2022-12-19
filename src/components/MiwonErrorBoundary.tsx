@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 
-interface ErroBoundaryProps {
+interface ErrorBoundaryProps {
   children: ReactNode
 }
 interface ErrorBoundaryState {
@@ -8,16 +8,16 @@ interface ErrorBoundaryState {
 }
 
 class ErrorBoundary extends React.Component<
-  ErroBoundaryProps,
+  ErrorBoundaryProps,
   ErrorBoundaryState
 > {
-  constructor(props: ErroBoundaryProps) {
+  constructor(props: ErrorBoundaryProps) {
     super(props)
 
     // Define a state variable to track whether is an error or not
     this.state = { hasError: false }
   }
-  static getDerivedStateFromError() {
+  static getDerivedStateFromError(error: any) {
     // Update state so the next render will show the fallback UI
 
     return { hasError: true }
