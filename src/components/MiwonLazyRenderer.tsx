@@ -8,7 +8,7 @@ interface LazyRendererProps {
   offset?: number
 }
 
-const MiwonLazyLender = ({
+const MiwonLazyRenderer = ({
   children,
   delay,
   className,
@@ -69,4 +69,4 @@ const MiwonLazyLender = ({
   )
 }
 
-export default MiwonLazyLender
+export default MiwonLazyRenderer

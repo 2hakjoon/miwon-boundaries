@@ -1,11 +1,11 @@
 import MiwonAsyncBoundary from './components/MiwonAsyncBoundary'
-import MiwonLazyLender from './components/MiwonLazyLender'
+import MiwonLazyRenderer from './components/MiwonLazyRenderer'
 import MiwonErrorBoundary from './components/MiwonErrorBoundary'
 import MiwonSuspense from './components/MiwonSuspense'
 
 export {
   MiwonAsyncBoundary,
-  MiwonLazyLender,
+  MiwonLazyRenderer,
   MiwonErrorBoundary,
   MiwonSuspense
 }
